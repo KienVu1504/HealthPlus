@@ -510,3 +510,7 @@ Transitions
     background-color: #4599ff;
     color: white;
   }
+
+  .fa-arrow-left, .fa-arrow-right{
+    color: #4599ff;
+  }
