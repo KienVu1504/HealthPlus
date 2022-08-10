@@ -5,11 +5,9 @@ $(function() {
     })
 });
 
-// $(window).on("load",function(){
 username = localStorage.getItem('username');
 if (username == null || username.length == 0) {
     $('#nameShow').html('Hello User');
 } else {
     $('#nameShow').html('Hello: ' + username);
 }
-// });
