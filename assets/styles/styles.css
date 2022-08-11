@@ -496,6 +496,8 @@ Transitions
 
   .linkBtn{
     margin: 10px;
+    transition: all 0.2s ease-in-out;
+    border: 2px solid #4599ff;
   }
 
   .linkBtn:link{
@@ -533,10 +535,35 @@ Transitions
 
 .row p a{
   text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+.row p a:after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color:#4599ff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
 }
 
 .row p a:hover{
   text-decoration: none;
   cursor: pointer;
-  color: blue;
+}
+
+.row p a:hover:after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+hr{
+  background-color: #4599ff !important;
+  height: 3px !important;
+  width: 80% !important;
 }
