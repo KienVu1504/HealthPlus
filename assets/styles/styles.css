@@ -322,12 +322,6 @@ Transitions
   .flickity-page-dots .dot{
     background-color: #4599ff;
   }
-  
-  /* .flickity-page-dots{
-    bottom: auto;
-    top: 45vh;
-  } */
-  
 
   .circle-wrap {
     margin: 150px auto;
@@ -379,63 +373,10 @@ Transitions
     animation: fill ease-in-out 3s;
     /* transform: rotate(135deg); */
   }
-  
-  @keyframes deg108{
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(108deg);
-    }
-  }
-
-  @keyframes deg240{
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(240deg);
-    }
-  }
-
-  @keyframes deg264{
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(264deg);
-    }
-  }
-
-  @keyframes deg187{
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(187deg);
-    }
-  }
-
-  @keyframes deg225{
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(255deg);
-    }
-  }
-
-  @keyframes deg230{
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(230deg);
-    }
-  }
 
   .normal{
-    color: green
+    color: green;
+    margin-bottom: 150px;
   }
 
   .mediumP{
