@@ -44,36 +44,36 @@
             <center>
                 <a href="../../" class="linkBtn" style="margin: 50px;">Back to home page</a>
 
-                <h2>Appointments</h2>
+                <h2>Input Form</h2>
                 <form>
                     <div class="mb-3 mt-3">
                         <label for="weight">Weight:</label>
-                        <input type="number" class="form-control" id="weight" placeholder="Enter your weight" name="weight">
+                        <input type="number" class="form-control" id="weight" placeholder="Enter your weight" name="weight" required min="0" max="635">
                     </div>
 
                     <div class="mb-3 mt-3">
                         <label for="bp">Blood Pressure:</label>
-                        <input type="number" class="form-control" id="bp" placeholder="Enter your Blood Pressure" name="bp">
+                        <input type="number" class="form-control" id="bp" placeholder="Enter your Blood Pressure" name="bp" required min="0" max="370">
                     </div>
                     
                     <div class="mb-3 mt-3">
                         <label for="water">Water (Cup/day):</label>
-                        <input type="number" class="form-control" id="water" placeholder="Enter number of water cup you drink per day" name="water">
+                        <input type="number" class="form-control" id="water" placeholder="Enter number of water cup you drink per day" name="water" required min="0" max="84">
                     </div>
 
                     <div class="mb-3 mt-3">
                         <label for="bmi">BMI:</label>
-                        <input type="number" class="form-control" id="bmi" placeholder="Enter your BMI" name="bmi">
+                        <input type="number" class="form-control" id="bmi" placeholder="Enter your BMI" name="bmi" required min="0" max="78">
                     </div>
 
                     <div class="mb-3 mt-3">
                         <label for="sleep">Sleep hours:</label>
-                        <input type="number" class="form-control" id="sleep" placeholder="Enter your Sleep hours" name="sleep">
+                        <input type="number" class="form-control" id="sleep" placeholder="Enter your Sleep hours" name="sleep" required min="0" max="264">
                     </div>
 
                     <div class="mb-3 mt-3">
                         <label for="glucose">Blood Suger levels:</label>
-                        <input type="number" class="form-control" id="glucose" placeholder="Enter your Blood Suger levels" name="glucose">
+                        <input type="number" class="form-control" id="glucose" placeholder="Enter your Blood Suger levels" name="glucose" required min="0" max="136">
                     </div>
 
                     <button style="margin: 30px;" type="submit" class="btn btn-primary">Submit</button>
@@ -86,7 +86,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/fullpage.js/dist/fullpage.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
-    <script src="../../../assets/scripts/scripts.js"></script>
-    <script src="../../../assets/scripts/fullpageOUT.js"></script>
+    <!-- <script src="../../../assets/scripts/scripts.js"></script>
+    <script src="../../../assets/scripts/fullpageOUT.js"></script> -->
 </body>
 </html>
