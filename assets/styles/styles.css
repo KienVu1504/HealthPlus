@@ -9,6 +9,10 @@ General Style
   box-sizing: border-box;
 }
 
+.col-sm-12{
+  transition: all ease-in-out 0.2s !important;
+}
+
 body,
 html {
   height: 100%;
@@ -514,3 +518,25 @@ Transitions
   .fa-arrow-left, .fa-arrow-right{
     color: #4599ff;
   }
+
+.row{
+  margin: 50px 0;
+}
+
+.row p{
+  font-size: 20px;
+}
+
+.col-sm-12{
+  margin: 10px 0;
+}
+
+.row p a{
+  text-decoration: none;
+}
+
+.row p a:hover{
+  text-decoration: none;
+  cursor: pointer;
+  color: blue;
+}
