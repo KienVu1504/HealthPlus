@@ -48,30 +48,30 @@
                 <form>
                     <div class="mb-3 mt-3">
                         <label for="fullName">FullName:</label>
-                        <input type="text" class="form-control" id="fullName" placeholder="Enter fullname" name="fullName">
+                        <input type="text" class="form-control" id="fullName" placeholder="Enter fullname" name="fullName" pattern="[a-zA-Z'-'\s]*" required maxlength="50">
                     </div>
 
                     <div class="mb-3 mt-3">
                         <label for="phoneNumber">PhoneNumber:</label>
-                        <input type="text" class="form-control" id="phoneNumber" placeholder="Enter Phone Number" name="phoneNumber">
+                        <input type="text" class="form-control" id="phoneNumber" placeholder="Enter Phone Number" name="phoneNumber" pattern="[0-9]{10}" maxlength="10" required>
                     </div>
                     
                     <div class="mb-3 mt-3">
                         <label for="address">Address:</label>
-                        <input type="text" class="form-control" id="address" placeholder="Enter address" name="address">
+                        <input type="text" class="form-control" id="address" placeholder="Enter address" name="address" required maxlength="150">
                     </div>
 
                     <div class="mb-3 mt-3">
                         <label for="email">Email:</label>
-                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
                     </div>
 
                     <div class="mb-3">
                         <label for="dateTime">DateTime:</la>
-                        <input type="date" class="form-control" id="dateTime" placeholder="Enter password" name="dateTime">
+                        <input type="date" class="form-control" id="dateTime" placeholder="Enter password" name="dateTime" required>
                     </div>
 
-                    <button style="margin: 30px;" type="submit" class="btn btn-primary">Submit</button>
+                    <button style="margin: 30px;" type="submit" id="btnSubmitA" class="btn btn-primary" onclick="valCheckAForm()">Submit</button>
                 </form>
             </center>
         </div>
@@ -81,7 +81,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/fullpage.js/dist/fullpage.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
-    <script src="../../../assets/scripts/scripts.js"></script>
-    <script src="../../../assets/scripts/fullpageOUT.js"></script>
+    <!-- <script src="../../../assets/scripts/scripts.js"></script> -->
+    <!-- <script src="../../../assets/scripts/fullpageOUT.js"></script> -->
 </body>
 </html>
