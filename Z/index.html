@@ -43,7 +43,7 @@
 <body>
     <main>
         <div id="fullpage">
-            <div class="section">
+            <div class="section" style="background-image: url(../assets/images/ssdfgsd.png); background-repeat: no-repeat; background-position: center;">
                 <div id="nameShow">Hello User</div>
                 
                 <div>
@@ -247,7 +247,7 @@
                                 <th style="text-align: center;">PhoneNumber</th>
                                 <th style="text-align: center;">Address</th>
                                 <th style="text-align: center;">Email</th>
-                                <th style="text-align: center;">Datetime</th>
+                                <th style="text-align: center;">Time</th>
                             </tr>
                 
                             <script>
@@ -293,9 +293,8 @@
                         <br>
                         <table id='dosage' style="text-align: center; font-size: 20px;">
                             <tr>
-                                <th>Medicine Name</th>
-                                <th>Usefor</th>
-                                <th>User manual</th>
+                                <th style="text-align: center;">Medicine Name</th>
+                                <th style="text-align: center;">User manual</th>
                             </tr>
                             <script>
                                 $(document).ready(function () {
@@ -305,8 +304,6 @@
                                                 medicine += '<tr>';
                                                 medicine += '<td>' + 
                                                 value.medicineName + '</td>';
-                                                medicine += '<td>' + 
-                                                value.useFor + '</td>';
                                                 medicine += '<td>' + 
                                                 value.userManual + '</td>';
                                                 medicine += '</tr>';
@@ -361,20 +358,15 @@
                 <div class="container">
                     <center>
                         <h1>Medicine Dosage</h1>
-                        <img src="../assets/images/hjjhgjhgjhgjhgj.png" alt="" style="margin: 50px auto;">
+                        <img src="../assets/images/hfgfghfg.png" alt="" style="margin: 50px auto;">
                         <form>
                             <div class="mb-3 mt-3">
                                 <label for="name">Medicine name:</label>
                                 <input type="text" class="form-control" id="name" placeholder="Enter Medicine name" name="name" required maxlength="100">
                             </div>
-                            
-                            <div class="mb-3 mt-3">
-                                <label for="usage">Usage:</label>
-                                <input type="text" class="form-control" id="usage" placeholder="Enter usage" name="usage" required maxlength="500">
-                            </div>
 
                             <div class="mb-3 mt-3">
-                                <label for="use">Use for:</label>
+                                <label for="use">Enter user manual:</label>
                                 <input type="text" class="form-control" id="use" placeholder="Enter use case" name="use" required maxlength="500">
                             </div>
 

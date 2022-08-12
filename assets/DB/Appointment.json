@@ -1,8 +1,8 @@
 [
-    {"FullName": "Nguyen Van A", "PhoneNumber": "0836669189","Address": "Hung Yen", "Email": "nguyenvana@gmail.com", "Datetime": "12/04/2022"},
-    {"FullName": "Nguyen Van B", "PhoneNumber": "0834663339","Address": "Ha Noi", "Email": "nguyenvanb@gmail.com", "Datetime": "06/06/2022"},
-    {"FullName": "Nguyen Van C", "PhoneNumber": "0832229189","Address": "Da Nang", "Email": "nguyenvanc@gmail.com", "Datetime": "22/03/2022"},
-    {"FullName": "Nguyen Van D", "PhoneNumber": "0834666189","Address": "Bac Giang", "Email": "nguyenvand@gmail.com", "Datetime": "07/09/2022"},
-    {"FullName": "Nguyen Van E", "PhoneNumber": "0838889189","Address": "Thai Binh", "Email": "nguyenvane@gmail.com", "Datetime": "21/11/2022"},
-    {"FullName": "Nguyen Van F", "PhoneNumber": "0877769189","Address": "Hai Duong", "Email": "nguyenvanf@gmail.com", "Datetime": "24/12/2022"}
+    {"FullName": "Nguyen Van A", "PhoneNumber": "0836669189","Address": "Hung Yen", "Email": "nguyenvana@gmail.com", "Datetime": "12/04/2022 15:30"},
+    {"FullName": "Nguyen Van B", "PhoneNumber": "0834663339","Address": "Ha Noi", "Email": "nguyenvanb@gmail.com", "Datetime": "06/06/2022 07:15"},
+    {"FullName": "Nguyen Van C", "PhoneNumber": "0832229189","Address": "Da Nang", "Email": "nguyenvanc@gmail.com", "Datetime": "22/03/2022 10:00"},
+    {"FullName": "Nguyen Van D", "PhoneNumber": "0834666189","Address": "Bac Giang", "Email": "nguyenvand@gmail.com", "Datetime": "07/09/2022 13:00"},
+    {"FullName": "Nguyen Van E", "PhoneNumber": "0838889189","Address": "Thai Binh", "Email": "nguyenvane@gmail.com", "Datetime": "21/11/2022 13:45"},
+    {"FullName": "Nguyen Van F", "PhoneNumber": "0877769189","Address": "Hai Duong", "Email": "nguyenvanf@gmail.com", "Datetime": "24/12/2022 15:15"}
 ]
