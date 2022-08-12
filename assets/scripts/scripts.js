@@ -13,3 +13,10 @@ if (username == null || username.length == 0) {
 } else {
     $('#nameShow').html('Hello: ' + username);
 }
+
+//device detection
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    window.location.replace("https://kienvu1504.github.io/HealthPlus/K/");
+} else {
+    window.location.replace("https://kienvu1504.github.io/HealthPlus/Z/");
+}

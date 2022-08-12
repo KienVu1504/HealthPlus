@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="https://unpkg.com/fullpage.js/dist/fullpage.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
 	<link rel="stylesheet" href="../assets/styles/styles.css">
+	<link rel="stylesheet" href="../assets/styles/stylesK.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css">
 
@@ -55,126 +56,179 @@
                 </div>
             </div>
 
-            <div class="section">
-                <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
-                    <div class="gallery-cell">
-                        <h1>Your Stats</h1>
-                        <img src="../assets/images/pngegg.png" alt="" style="margin: 150px auto;">
-                        <i class="fad fa-arrow-left"></i>
-                        <i class="fad fa-arrow-right"></i>
-                    </div>
+            <div class="section container">
+                <div class="header-body">
+                    <h1>Your Stats</h1>
+                    <img src="../assets/images/pngegg.png" alt="" style="margin: 50px auto;">
+                    
+                    <div class="row">
+                        <div class="col-xl-4">
+                            <div class="card card-stats mb-4 mb-xl-0">
+                                <div class="card-body">
+                                    <div class="row margin-none">
+                                        <div class="col leftly">
+                                            <h5 class="card-title text-uppercase text-muted mb-0">Weight</h5>
+                                            <span class="h2 font-weight-bold mb-0">60kg</span>
+                                        </div>
 
-                    <!-- Cal rule: n; (x - y) -> (n/y)*360 || <= 180 -> 0deg ?-> ((n/y)*360)-180deg -->
-                    <div class="gallery-cell">
-                        <h1>Weight</h1>
-                        <p class="mediumP normal">Normal</p>
-                        <div class="circle-wrap">
-                            <div class="circle">
-                                <div class="mask full" style="transform: rotate(180deg);">
-                                    <div class="fill" style="transform: rotate(0deg);background-color: green;"></div>
+                                        <div class="col-auto">
+                                            <div class="icon-card icon-shape bg-success text-white rounded-circle shadow">
+                                            <i class="fas fa-chart-bar"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="progress margin-abit">
+                                        <div class="progress-bar progress-bar-bg-green progress-bar-striped progress-bar-animated" style="width:9%"></div>
+                                        <!-- 0 - 635 -->
+                                    </div>
+
+                                    <p class="mt-3 mb-0 text-muted text-sm">
+                                        <span class="text-success mr-2">Normal</span>
+                                    </p>
                                 </div>
+                            </div>
+                        </div>
 
-                                <div class="mask half">
-                                    <div class="fill" style="transform: rotate(34deg);background-color: green;"></div>
+                        <div class="col-xl-4">
+                            <div class="card card-stats mb-4 mb-xl-0">
+                                <div class="card-body">
+                                    <div class="row margin-none">
+                                        <div class="col leftly">
+                                            <h5 class="card-title text-uppercase text-muted mb-0">Blood Pressure</h5>
+                                            <span class="h2 font-weight-bold mb-0">120mmHg</span>
+                                        </div>
+
+                                        <div class="col-auto">
+                                            <div class="icon-card icon-shape bg-success text-white rounded-circle shadow">
+                                            <i class="fas fa-chart-bar"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="progress margin-abit">
+                                        <div class="progress-bar progress-bar-bg-green progress-bar-striped progress-bar-animated" style="width:32%"></div>
+                                        <!-- 0 - 370 -->
+                                    </div>
+
+                                    <p class="mt-3 mb-0 text-muted text-sm">
+                                        <span class="text-success mr-2">Normal</span>
+                                    </p>
                                 </div>
+                            </div>
+                        </div>
 
-                                <div class="inside-circle" style="color: green;"> 60kg </div>
-                                <!-- 0 - 635 -->
+                        <div class="col-xl-4">
+                            <div class="card card-stats mb-4 mb-xl-0">
+                                <div class="card-body">
+                                    <div class="row margin-none">
+                                        <div class="col leftly">
+                                            <h5 class="card-title text-uppercase text-muted mb-0">Water</h5>
+                                            <span class="h2 font-weight-bold mb-0">13 Cups</span>
+                                        </div>
+
+                                        <div class="col-auto">
+                                            <div class="icon-card icon-shape bg-success text-white rounded-circle shadow">
+                                            <i class="fas fa-chart-bar"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="progress margin-abit">
+                                        <div class="progress-bar progress-bar-bg-green progress-bar-striped progress-bar-animated" style="width:15%"></div>
+                                        <!-- 0 - 84 -->
+                                    </div>
+
+                                    <p class="mt-3 mb-0 text-muted text-sm">
+                                        <span class="text-success mr-2">Normal</span>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="gallery-cell">
-                        <h1>Blood Pressure</h1>
-                        <p class="mediumP normal">Normal</p>
-                        <div class="circle-wrap">
-                            <div class="circle">
-                                <div class="mask full" style="transform: rotate(180deg);">
-                                    <div class="fill" style="transform: rotate(0deg);background-color: green;"></div>
-                                </div>
+                    <div class="row">
+                        <div class="col-xl-4">
+                            <div class="card card-stats mb-4 mb-xl-0">
+                                <div class="card-body">
+                                    <div class="row margin-none">
+                                        <div class="col leftly">
+                                            <h5 class="card-title text-uppercase text-muted mb-0">BMI</h5>
+                                            <span class="h2 font-weight-bold mb-0">20.8</span>
+                                        </div>
 
-                                <div class="mask half">
-                                    <div class="fill" style="transform: rotate(117deg);background-color: green;"></div>
-                                </div>
+                                        <div class="col-auto">
+                                            <div class="icon-card icon-shape bg-success text-white rounded-circle shadow">
+                                            <i class="fas fa-chart-bar"></i>
+                                            </div>
+                                        </div>
+                                    </div>
 
-                                <div class="inside-circle" style="color: green;"> 120mmHg </div>
-                                <!-- 0 - 370 -->
+                                    <div class="progress margin-abit">
+                                        <div class="progress-bar progress-bar-bg-green progress-bar-striped progress-bar-animated" style="width:27%"></div>
+                                        <!-- 0 - 78 -->
+                                    </div>
+
+                                    <p class="mt-3 mb-0 text-muted text-sm">
+                                        <span class="text-success mr-2">Normal</span>
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="gallery-cell">
-                        <h1>Water</h1>
-                        <p class="mediumP normal">Normal</p>
-                        <div class="circle-wrap">
-                            <div class="circle">
-                                <div class="mask full" style="transform: rotate(180deg);">
-                                    <div class="fill" style="transform: rotate(0deg);background-color: green;"></div>
+                        <div class="col-xl-4">
+                            <div class="card card-stats mb-4 mb-xl-0">
+                                <div class="card-body">
+                                    <div class="row margin-none">
+                                        <div class="col leftly">
+                                            <h5 class="card-title text-uppercase text-muted mb-0">Sleep</h5>
+                                            <span class="h2 font-weight-bold mb-0">5h</span>
+                                        </div>
+
+                                        <div class="col-auto">
+                                            <div class="icon-card icon-shape bg-warning text-white rounded-circle shadow">
+                                            <i class="fas fa-chart-bar"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="progress margin-abit">
+                                        <div class="progress-bar progress-bar-bg-warning progress-bar-striped progress-bar-animated" style="width:2%"></div>
+                                        <!-- 0 - 264 -->
+                                    </div>
+
+                                    <p class="mt-3 mb-0 text-muted text-sm">
+                                        <span class="text-warning mr-2">Sleepless</span>
+                                    </p>
                                 </div>
-
-                                <div class="mask half">
-                                    <div class="fill" style="transform: rotate(15deg);background-color: green;"></div>
-                                </div>
-
-                                <div class="inside-circle" style="color: green;"> 13 Cup </div>
-                                <!-- 0 - 84 -->
                             </div>
                         </div>
-                    </div>
 
-                    <div class="gallery-cell">
-                        <h1>BMI</h1>
-                        <p class="mediumP normal">Normal</p>
-                        <div class="circle-wrap">
-                            <div class="circle">
-                                <div class="mask full" style="transform: rotate(180deg);">
-                                    <div class="fill" style="transform: rotate(0deg);background-color: green;"></div>
+                        <div class="col-xl-4">
+                            <div class="card card-stats mb-4 mb-xl-0">
+                                <div class="card-body">
+                                    <div class="row margin-none">
+                                        <div class="col leftly">
+                                            <h5 class="card-title text-uppercase text-muted mb-0">Glucose</h5>
+                                            <span class="h2 font-weight-bold mb-0">7mmol/l</span>
+                                        </div>
+
+                                        <div class="col-auto">
+                                            <div class="icon-card icon-shape bg-success text-white rounded-circle shadow">
+                                            <i class="fas fa-chart-bar"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="progress margin-abit">
+                                        <div class="progress-bar progress-bar-bg-green progress-bar-striped progress-bar-animated" style="width:5%"></div>
+                                        <!-- 0 - 136 -->
+                                    </div>
+
+                                    <p class="mt-3 mb-0 text-muted text-sm">
+                                        <span class="text-success mr-2">Normal</span>
+                                    </p>
                                 </div>
-
-                                <div class="mask half">
-                                    <div class="fill" style="transform: rotate(96deg);background-color: green;"></div>
-                                </div>
-
-                                <div class="inside-circle" style="color: green;"> 20.8 </div>
-                                <!-- 0 - 78 -->
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="gallery-cell">
-                        <h1>Sleep</h1>
-                        <p class="mediumP less">Sleepless</p>
-                        <div class="circle-wrap">
-                            <div class="circle">
-                                <div class="mask full" style="transform: rotate(180deg);">
-                                    <div class="fill" style="transform: rotate(0deg);background-color: orange;"></div>
-                                </div>
-
-                                <div class="mask half">
-                                    <div class="fill" style="transform: rotate(7deg);background-color: orange;"></div>
-                                </div>
-
-                                <div class="inside-circle" style="color: orange;"> 5h </div>
-                                <!-- 0 - 264 -->
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="gallery-cell">
-                        <h1>Glucose</h1>
-                        <p class="mediumP normal">Normal</p>
-                        <div class="circle-wrap">
-                            <div class="circle">
-                                <div class="mask full" style="transform: rotate(180deg);">
-                                    <div class="fill" style="transform: rotate(0deg);background-color: green;"></div>
-                                </div>
-
-                                <div class="mask half">
-                                    <div class="fill" style="transform: rotate(18deg);background-color: green;"></div>
-                                </div>
-
-                                <div class="inside-circle" style="color: green;"> 7mmol/l </div>
-                                <!-- 0 - 136 -->
                             </div>
                         </div>
                     </div>
@@ -182,123 +236,266 @@
             </div>
 
             <div class="section">
-                <center>
-                    <div class="gallery-cell">
-                        <h1>Your To Do List</h1>
-                        <img src="../assets/images/clipart315703.png" alt="" style="margin: 150px auto;">
-                        <a href="lists/Appointments/index.html" class="linkBtn">Check your appointments</a>
-                        <a href="lists/Dosage/index.html" class="linkBtn">Check your Medicine Dosage Schedules</a>
-                    </div>
-                </center>
-            </div>
-
-            <div class="section">
-                <center>
-                    <div class="gallery-cell">
-                        <h1>Input your Appointments & Schedules</h1>
-                        <img src="../assets/images/hjjhgjhgjhgjhgj.png" alt="" style="margin: 150px auto;">
-                        <a href="inputs/Appointments/index.html" class="linkBtn">Input your appointments</a>
-                        <a href="inputs/Dosage/index.html" class="linkBtn">Input your Medicine Dosage Schedules</a>
-                    </div>
-                </center>
-            </div>
-
-            <div class="section">
-                <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
-                    <div class="gallery-cell">
-                        <h1>Calculate Your Body Mass Index</h1>
-                        <img src="../assets/images/pngwing.com.png" alt="" style="margin: 150px auto;">
-                        <a href="https://kienvu1504.github.io/Fit4Life/" target="_blank" class="linkBtn">Calculate Now</a>
-                    </div>
-
-                    <div class="gallery-cell">
-                        <h1>Input your information</h1>
-                        <img src="../assets/images/clipart315703.png" alt="" style="margin: 150px auto;">
-                        <a href="inputs/Infors/index.html" class="linkBtn">Input your information</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="section">
-                <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }' id="video">
-                    <div class="gallery-cell">
-                        <h1>Self Health Tips</h1>
-                        <img src="../assets/images/hdhdhdh.png" alt="" style="margin: 150px auto;">
-                        <i class="fad fa-arrow-left"></i>
-                        <i class="fad fa-arrow-right"></i>
-                    </div>
-
-                    <!-- read from json -->
-                    <!-- <script>
-                        $(document).ready(function () {
+                <div class="container">
+                    <center>
+                        <h1>Doctor Appointments</h1>
+                        <br>
+                        <table id='appointments' style="text-align: center; font-size: 20px;">
+                            <tr>
+                                <th style="text-align: center;">Doctor</th>
+                                <th style="text-align: center;">PhoneNumber</th>
+                                <th style="text-align: center;">Address</th>
+                                <th style="text-align: center;">Email</th>
+                                <th style="text-align: center;">Datetime</th>
+                            </tr>
+                
+                            <script>
+                                $(document).ready(function () {
+                
+                                    $.getJSON("../../../assets/DB/Appointment.json", function (data) {
+                                        var patient = '';
+                
+                                        $.each(data, function (key, value) {
+                
+                                            patient += '<tr>';
+                                            patient += '<td>' + 
+                                            value.FullName + '</td>';
         
-                            $.getJSON("../assets/DB/SelfCare.json", function (data) {
-                                var string = '';
+                                            patient += '<td>' + 
+                                            value.PhoneNumber + '</td>';
         
-                                $.each(data, function (key, value) {
-                                    string += '<div class="gallery-cell">';
-                                    string += value.iframe + '<br>';
-                                    string += '<a href="' + value.url + '" target="_blank" title="" class="linkBtn">View on Youtube</a>';
-                                    string += '</div>';
+                                            patient += '<td>' + 
+                                            value.Address + '</td>';
+        
+                                            patient += '<td>' + 
+                                            value.Email + '</td>';
+        
+                                            patient += '<td>' + 
+                                            value.Datetime + '</td>';
+        
+                                            patient += '</tr>';
+                                        });
+                                        
+                                        $('#appointments').append(patient);
+                                    });
                                 });
-                                
-                                $('#video').append(string);
-                            });
-                        });
-                    </script> -->
+                            </script>
+                        </table>
+                    </center>
+                </div>
+            </div>
 
-                    <div class="gallery-cell">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/bARpudRvNgA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="section">
+                <div class="container">
+                    <center>
+                        <h1>Medicine Dosage Schedules</h1>
                         <br>
-                        <br>
-                        <a href="https://www.youtube.com/watch?v=bARpudRvNgA&ab_channel=Psych2Go" target="_blank" title="" class="linkBtn">View on Youtube</a>
+                        <table id='dosage' style="text-align: center; font-size: 20px;">
+                            <tr>
+                                <th>Medicine Name</th>
+                                <th>Usefor</th>
+                                <th>User manual</th>
+                            </tr>
+                            <script>
+                                $(document).ready(function () {
+                                    $.getJSON("../../../assets/DB/MedicineDosage.json", function (data) {
+                                        var medicine = '';
+                                        $.each(data, function (key, value) {
+                                                medicine += '<tr>';
+                                                medicine += '<td>' + 
+                                                value.medicineName + '</td>';
+                                                medicine += '<td>' + 
+                                                value.useFor + '</td>';
+                                                medicine += '<td>' + 
+                                                value.userManual + '</td>';
+                                                medicine += '</tr>';
+                                        });
+                                        $('#dosage').append(medicine);
+                                    });
+                                });
+                            </script>
+                        </table>
+                    </center>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="container">
+                    <center>
+                        <h2>Appointments</h2>
+                        <img src="../assets/images/hjjhgjhgjhgjhgj.png" alt="" style="margin: 50px auto;">
+                        <form>
+                            <div class="mb-3 mt-3">
+                                <label for="fullName">FullName:</label>
+                                <input type="text" class="form-control" id="fullName" placeholder="Enter fullname" name="fullName" pattern="[a-zA-Z'-'\s]*" required maxlength="50">
+                            </div>
+
+                            <div class="mb-3 mt-3">
+                                <label for="phoneNumber">PhoneNumber:</label>
+                                <input type="text" class="form-control" id="phoneNumber" placeholder="Enter Phone Number" name="phoneNumber" pattern="[0-9]{10}" maxlength="10" required>
+                            </div>
+                            
+                            <div class="mb-3 mt-3">
+                                <label for="address">Address:</label>
+                                <input type="text" class="form-control" id="address" placeholder="Enter address" name="address" required maxlength="150">
+                            </div>
+
+                            <div class="mb-3 mt-3">
+                                <label for="email">Email:</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="dateTime">DateTime:</la>
+                                <input type="date" class="form-control" id="dateTime" placeholder="Enter password" name="dateTime" required>
+                            </div>
+
+                            <button style="margin: 30px;" type="submit" id="btnSubmitA" class="btn btn-primary" onclick="valCheckAForm()">Submit</button>
+                        </form>
+                    </center>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="container">
+                    <center>
+                        <h1>Medicine Dosage</h1>
+                        <img src="../assets/images/hjjhgjhgjhgjhgj.png" alt="" style="margin: 50px auto;">
+                        <form>
+                            <div class="mb-3 mt-3">
+                                <label for="name">Medicine name:</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter Medicine name" name="name" required maxlength="100">
+                            </div>
+                            
+                            <div class="mb-3 mt-3">
+                                <label for="usage">Usage:</label>
+                                <input type="text" class="form-control" id="usage" placeholder="Enter usage" name="usage" required maxlength="500">
+                            </div>
+
+                            <div class="mb-3 mt-3">
+                                <label for="use">Use for:</label>
+                                <input type="text" class="form-control" id="use" placeholder="Enter use case" name="use" required maxlength="500">
+                            </div>
+
+                            <button style="margin: 30px;" type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </center>
+                </div>
+            </div>
+
+            <div class="section">
+                <h1>Calculate Your Body Mass Index</h1>
+                <img src="../assets/images/pngwing.com.png" alt="" style="margin: 150px auto;">
+                <center>
+                    <a href="https://kienvu1504.github.io/Fit4Life/" target="_blank" class="linkBtn" style="width: 50%;">Calculate Now</a>
+                </center>
+            </div>
+
+            <div class="section">
+                <div class="container">
+                    <center>
+                        <h2>Your information</h2>
+                        <img src="../assets/images/clipart315703.png" alt="" style="margin: 50px auto;">
+                        <form>
+                            <div class="mb-3 mt-3">
+                                <label for="weight">Weight:</label>
+                                <input type="number" class="form-control" id="weight" placeholder="Enter your weight" name="weight" required min="0" max="635">
+                            </div>
+
+                            <div class="mb-3 mt-3">
+                                <label for="bp">Blood Pressure:</label>
+                                <input type="number" class="form-control" id="bp" placeholder="Enter your Blood Pressure" name="bp" required min="0" max="370">
+                            </div>
+                            
+                            <div class="mb-3 mt-3">
+                                <label for="water">Water (Cup/day):</label>
+                                <input type="number" class="form-control" id="water" placeholder="Enter number of water cup you drink per day" name="water" required min="0" max="84">
+                            </div>
+
+                            <div class="mb-3 mt-3">
+                                <label for="bmi">BMI:</label>
+                                <input type="number" class="form-control" id="bmi" placeholder="Enter your BMI" name="bmi" required min="0" max="78">
+                            </div>
+
+                            <div class="mb-3 mt-3">
+                                <label for="sleep">Sleep hours:</label>
+                                <input type="number" class="form-control" id="sleep" placeholder="Enter your Sleep hours" name="sleep" required min="0" max="264">
+                            </div>
+
+                            <div class="mb-3 mt-3">
+                                <label for="glucose">Blood Suger levels:</label>
+                                <input type="number" class="form-control" id="glucose" placeholder="Enter your Blood Suger levels" name="glucose" required min="0" max="136">
+                            </div>
+
+                            <button style="margin: 30px;" type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </center>
+                </div>
+            </div>
+
+            <div class="section container">
+                <div class="header-body">
+                    <br>
+                    <h1>Self Health Tips</h1>
+                    <img src="../assets/images/hdhdhdh.png" alt="" style="margin: 50px auto;">
+                    
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/bARpudRvNgA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+
+                        <div class="col-xl-6">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/9ESDjgCS8bg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
                     </div>
 
-                    <div class="gallery-cell">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/9ESDjgCS8bg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <br>
-                        <br>
-                        <a href="https://www.youtube.com/watch?v=9ESDjgCS8bg&ab_channel=Teachingmensfashion" target="_blank" title="" class="linkBtn">View on Youtube</a>
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/c3cvA8W-sdM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+
+                        <div class="col-xl-6">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/JY1b5oC_R6Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
                     </div>
 
-                    <div class="gallery-cell">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/c3cvA8W-sdM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <br>
-                        <br>
-                        <a href="https://www.youtube.com/watch?v=c3cvA8W-sdM&ab_channel=Let%27stute" target="_blank" title="" class="linkBtn">View on Youtube</a>
-                    </div>
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/ipgigvcC-rI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
 
-                    <div class="gallery-cell">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/JY1b5oC_R6Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <br>
-                        <br>
-                        <a href="https://www.youtube.com/watch?v=JY1b5oC_R6Y&ab_channel=MalamaLife" target="_blank" title="" class="linkBtn">View on Youtube</a>
-                    </div>
-
-                    <div class="gallery-cell">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ipgigvcC-rI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <br>
-                        <br>
-                        <a href="https://www.youtube.com/watch?v=ipgigvcC-rI&ab_channel=CivicActionGTHA" target="_blank" title="" class="linkBtn">View on Youtube</a>
-                    </div>
-
-                    <div class="gallery-cell">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/-Ts1qv2NU5Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <br>
-                        <br>
-                        <a href="https://www.youtube.com/watch?v=-Ts1qv2NU5Q&ab_channel=DukeSchoolOfNursing" target="_blank" title="" class="linkBtn">View on Youtube</a>
+                        <div class="col-xl-6">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/-Ts1qv2NU5Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="section">
-                <center>
-                    <div class="gallery-cell">
-                        <h1>Tell me what you think</h1>
-                        <img src="../assets/images/pngfind.com-feedback-images-png-6205471.png" alt="" style="margin: 150px auto;">
-                        <a href="inputs/Feedback/index.html" class="linkBtn">Feedback</a>
-                    </div>
-                </center>
+                <div class="container">
+                    <center>
+                        <h1>Feedback</h1>
+                        <img src="../assets/images/pngfind.com-feedback-images-png-6205471.png" alt="" style="margin: 50px auto;">
+                        <form>
+                            <div class="mb-3 mt-3">
+                                <label for="email">Email:</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email" name="email" required>
+                            </div>
+                            
+                            <div class="mb-3 mt-3">
+                                <label for="fullname">Fullname:</label>
+                                <input type="text" class="form-control" id="usage" placeholder="Enter your fullname" name="fullname" pattern="[a-zA-Z'-'\s]*" required maxlength="50">
+                            </div>
+
+                            <div class="mb-3 mt-3">
+                                <label for="content">Content:</label>
+                                <textarea id="content" name="content" style="width: 100%;" class="form-control" placeholder="Enter use case"></textarea>
+                            </div>
+
+                            <button style="margin: 30px;" type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </center>
+                </div>
             </div>
 
             <div class="section">
@@ -319,7 +516,7 @@
 
                             <div class="col-xxl-4 col-sm-12">
                                 <p>
-                                    Copyright 2021 | All rights reserved
+                                    Copyright 2022 | All rights reserved
                                     <br>
                                     <a href="http://kienvu1504.github.io/" target="_blank">Yellow Worms Team</a>
                                 </p>
