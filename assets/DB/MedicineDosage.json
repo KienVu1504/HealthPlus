@@ -1,27 +1,26 @@
 [
-    {
-        "medicineName":"Lisinopril",
-        "userManual":"- Initial dose: 10 mg orally once a day; 5 mg orally once a day. <br> - Maintenance dose: 20 to 40 mg orally once a day. <br> - Maximum dose: 80 mg orally once a day."
-    },
+  {
+    "medicineName": "Lisinopril",
+    "userManual": "- Initial dose: 10 mg orally once a day; 5 mg orally once a day. <br> - Maintenance dose: 20 to 40 mg orally once a day. <br> - Maximum dose: 80 mg orally once a day."
+  },
 
-    {
-        "medicineName":"Gilenya",
-        "userManual":"- The recommended dosage of GILENYA is 0.5 mg orally once-daily."
-    },
+  {
+    "medicineName": "Gilenya",
+    "userManual": "- The recommended dosage of GILENYA is 0.5 mg orally once-daily."
+  },
 
-    {
-        "medicineName":"Secukinumab",
-        "userManual":"- 300 mg subcutaneously at weeks 0, 1, 2, 3, and 4 followed by 300 mg every 4 weeks (each 300 mg dose is given as 2 subcutaneous injections of 150 mg)"
-    },
+  {
+    "medicineName": "Secukinumab",
+    "userManual": "- 300 mg subcutaneously at weeks 0, 1, 2, 3, and 4 followed by 300 mg every 4 weeks (each 300 mg dose is given as 2 subcutaneous injections of 150 mg)"
+  },
 
-    {
-        "medicineName":"Metformin",
-        "userManual":"- Initial dose: 500 mg orally twice a day or 850 mg orally once a day. <br> - Dose titration: Increase in 500 mg increments weekly or 850 mg every 2 weeks as tolerated. <br> - Maintenance dose: 2000 mg/day in divided doses. <br> - Maximum dose: 2550 mg/day."
-    },
+  {
+    "medicineName": "Metformin",
+    "userManual": "- Initial dose: 500 mg orally twice a day or 850 mg orally once a day. <br> - Dose titration: Increase in 500 mg increments weekly or 850 mg every 2 weeks as tolerated. <br> - Maintenance dose: 2000 mg/day in divided doses. <br> - Maximum dose: 2550 mg/day."
+  },
 
-    {
-        "medicineName":"Metformin",
-        "userManual":"- 400 mg salt (310 mg base) orally once a week. <br> - Weight-based dosing: 6.5 mg/kg salt (5 mg/kg base) orally once a week. <br> - Maximum dose: 400 mg salt (310 mg base)/dose"
-    }
-
+  {
+    "medicineName": "Metformin",
+    "userManual": "- 400 mg salt (310 mg base) orally once a week. <br> - Weight-based dosing: 6.5 mg/kg salt (5 mg/kg base) orally once a week. <br> - Maximum dose: 400 mg salt (310 mg base)/dose"
+  }
 ]

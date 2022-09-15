@@ -1,8 +1,8 @@
 //save user name
-$(function() {
-	$('#NameForm').submit(function() {
-		username = $('#user').val()
-		localStorage.setItem('username', username)
+$(function () {
+    $('#NameForm').submit(function () {
+        username = $('#user').val()
+        localStorage.setItem('username', username)
     })
 });
 

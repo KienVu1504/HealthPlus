@@ -1,5 +1,4 @@
 @media (min-width: 992px) {
-  
   .col-lg-6 {
     max-width: 50%;
     flex: 0 0 50%;
@@ -7,12 +6,11 @@
 }
 
 @media (min-width: 1200px) {
-  
   .col-xl-3 {
     max-width: 25%;
     flex: 0 0 25%;
   }
-  
+
   .col-xl-6 {
     max-width: 50%;
     flex: 0 0 50%;
@@ -24,7 +22,6 @@
 }
 
 @media (min-width: 1200px) {
-  
   .justify-content-xl-between {
     justify-content: space-between !important;
   }
@@ -97,25 +94,25 @@ a.text-white:focus {
     box-shadow: none !important;
     text-shadow: none !important;
   }
-  
+
   a:not(.btn) {
     text-decoration: underline;
   }
-  
+
   p,
   h2 {
     orphans: 3;
     widows: 3;
   }
-  
+
   h2 {
     page-break-after: avoid;
   }
-  
+
   @page {
     size: a3;
   }
-  
+
   body {
     min-width: 992px !important;
   }
@@ -147,26 +144,26 @@ main {
   justify-content: center;
 }
 
-.leftly{
-    text-align: left;
+.leftly {
+  text-align: left;
 }
 
-.margin-none{
-    margin: 0 !important;
+.margin-none {
+  margin: 0 !important;
 }
 
-.margin-abit{
-    margin: 10px;
+.margin-abit {
+  margin: 10px;
 }
 
-.center{
-    text-align: center;
+.center {
+  text-align: center;
 }
 
-.progress-bar-bg-green{
-    background-color: green !important;
+.progress-bar-bg-green {
+  background-color: green !important;
 }
 
-.progress-bar-bg-warning{
-    background-color: #ffc107 !important;
+.progress-bar-bg-warning {
+  background-color: #ffc107 !important;
 }

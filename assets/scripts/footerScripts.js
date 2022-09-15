@@ -9,34 +9,34 @@ function refreshTime() {
 setInterval(refreshTime, 1000);
 
 //get location via lat & lon
-$(function() {
+$(function () {
     const button = document.getElementById("geoLocation");
-    if(navigator.geolocation){
+    if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(onSuccess, onError);
-    }else{
+    } else {
         button.innerText = "Your browser not support";
     }
 
-    function onSuccess(position){
+    function onSuccess(position) {
         button.innerText = "Detecting your location...";
-        let {latitude, longitude} = position.coords;
+        let { latitude, longitude } = position.coords;
         fetch(`https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=f7473864d3c34b499d1bd69b635decd5`)
-        .then(response => response.json()).then(response =>{
-            let allDetails = response.results[0].components;
-            console.table(allDetails);
-            let {county, postcode, country} = allDetails;
-            button.innerText = `${country}`;
-        }).catch(()=>{
-            button.innerText = "Something went wrong";
-        });
+            .then(response => response.json()).then(response => {
+                let allDetails = response.results[0].components;
+                console.table(allDetails);
+                let { county, postcode, country } = allDetails;
+                button.innerText = `${country}`;
+            }).catch(() => {
+                button.innerText = "Something went wrong";
+            });
     }
-    
-    function onError(error){
-        if(error.code == 1){
+
+    function onError(error) {
+        if (error.code == 1) {
             button.innerText = "You denied the request";
-        }else if(error.code == 2){
+        } else if (error.code == 2) {
             button.innerText = "Location is unavailable";
-        }else{
+        } else {
             button.innerText = "Something went wrong";
         }
 
@@ -48,7 +48,7 @@ $(function() {
 var n = localStorage.getItem('on_load_counter');
 
 if (n === null) {
-  n = 0;
+    n = 0;
 }
 n++;
 
@@ -58,5 +58,5 @@ nums = n.toString().split('').map(Number);
 document.getElementById('CounterVisitor').innerHTML = '';
 
 for (var i of nums) {
-  document.getElementById('CounterVisitor').innerHTML += '<span class="counter-item">' + i + '</span>';
+    document.getElementById('CounterVisitor').innerHTML += '<span class="counter-item">' + i + '</span>';
 }
